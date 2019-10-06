@@ -8,5 +8,9 @@ public class TileEntityBase extends TileEntity {
     super(tileEntityTypeIn);
   }
 
-
+    protected void markDirtyQuick() {
+        if (getWorld() != null) {
+            getWorld().markChunkDirty(this.pos, this);
+        }
+    }
 }
