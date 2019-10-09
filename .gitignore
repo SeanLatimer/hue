@@ -18,4 +18,5 @@
 !/gradle.properties
 !/webresources
 !/images
+!/settings.gradle
 .DS_Store
